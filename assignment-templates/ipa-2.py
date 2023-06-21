@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[27]:
-
-
 '''Individual Programming Assignment 2
 
 70 points
@@ -240,7 +234,7 @@ def scytale_decipher(message, shift):
     # Replace `pass` with your code.
     # Stay within the function. Only use the parameters as input. The function should return your answer.
     decypher=""
+    shift=len(message)//shift
     for i in range(len(message)):
-        decypher=scytale_cipher(message,len(message)//shift)
-        return decypher
-
+        decypher=decypher+message[(i // shift) + (len(message) // shift) * (i % shift)]
+    return decypher
