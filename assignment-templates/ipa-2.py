@@ -68,7 +68,7 @@ def caesar_cipher(message, shift):
             output = output + " "
         else:
             output = output + chr((((ord(i)+shift)-64)%26)+64)
-    print(output)
+    return(output)
 
 def shift_by_letter(letter, letter_shift):
     '''Shift By Letter.
