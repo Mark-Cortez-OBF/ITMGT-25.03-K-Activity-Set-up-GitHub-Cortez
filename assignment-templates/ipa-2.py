@@ -4,7 +4,6 @@
 
 This assignment will develop your proficiency with Python's control flows.
 '''
-import string
 def shift_letter(letter, shift):
     '''Shift Letter.
     5 points.
