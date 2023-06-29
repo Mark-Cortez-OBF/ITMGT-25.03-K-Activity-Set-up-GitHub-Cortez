@@ -39,7 +39,7 @@ def shift_letter(letter, shift):
     if ord(letter)==32:
         return " "
     else:
-        return chr((((ord(letter)+shift)-64)%26)+64)
+        return chr((((ord(letter)+shift)-65)%26)+65)
 
 def caesar_cipher(message, shift):
     '''Caesar Cipher.
@@ -66,7 +66,7 @@ def caesar_cipher(message, shift):
         if ord(i)==32:
             output = output + " "
         else:
-            output = output + chr((((ord(i)+shift)-64)%26)+64)
+            output = output + chr((((ord(i)+shift)-65)%26)+65)
     return(output)
 
 def shift_by_letter(letter, letter_shift):
