@@ -49,13 +49,13 @@ def relationship_status(from_member, to_member, social_graph):
     # Stay within the function. Only use the parameters as input. The function should return your answer.
     if to_member in social_graph[from_member]['following']:
         if from_member in social_graph[to_member]['following']:
-            print("friends")
+            return("friends")
         else:
-            print("following")
+            return("following")
     elif from_member in social_graph[to_member]['following']:
-        print("followed by")
+        return("followed by")
     else:
-        print("no relationship")
+        return("no relationship")
 
 import numpy as np
 def tic_tac_toe(board):
@@ -141,7 +141,7 @@ def eta(first_stop, second_stop, route_map):
             next = next[0]
             total += route_map[(prev, next)]['travel_time_mins']
             if next == second_stop:
-                print(total)
+                return(total)
                 break
             prev = next
 
