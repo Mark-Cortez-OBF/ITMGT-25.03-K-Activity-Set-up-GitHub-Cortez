@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[6]:
-
-
 '''Individual Programming Assignment 3
 
 70 points
@@ -57,7 +51,6 @@ def relationship_status(from_member, to_member, social_graph):
     else:
         return("no relationship")
 
-import numpy as np
 def tic_tac_toe(board):
     '''Tic Tac Toe.
     25 points.
@@ -84,6 +77,7 @@ def tic_tac_toe(board):
     '''
     # Replace `pass` with your code.
     # Stay within the function. Only use the parameters as input. The function should return your answer.
+    import numpy as np
     def checkrows(board):
         for row in board:
             if len(set(row))==1:
@@ -144,4 +138,3 @@ def eta(first_stop, second_stop, route_map):
                 return(total)
                 break
             prev = next
-
