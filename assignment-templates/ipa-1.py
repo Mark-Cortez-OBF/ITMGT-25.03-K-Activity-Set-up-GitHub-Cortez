@@ -1,16 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 '''Individual Programming Assignment 1
 
 20 points
 
 This assignment will develop your basic familiarity with Python.
 '''
-import math
 def savings(gross_pay, tax_rate, expenses):
     '''Savings.
     5 points.
@@ -39,6 +32,7 @@ def savings(gross_pay, tax_rate, expenses):
     '''
     # Replace `pass` with your code.
     # Stay within the function. Only use the parameters as input. The function should return your answer.
+    import math
     rounded = (gross_pay)*(1-tax_rate)
     Savings = math.floor(rounded-expenses)
     return Savings
@@ -107,6 +101,7 @@ def interest(principal, rate, periods):
     '''
     # Replace `pass` with your code.
     # Stay within the function. Only use the parameters as input. The function should return your answer.
+    import math
     fv=math.floor((principal*rate*periods)+principal)
     return fv
 
@@ -148,4 +143,3 @@ def body_mass_index(weight, height):
     meters = ((height[0]*12)+height[1]) * 0.0254
     BMI = kg / (meters**2)
     return BMI
-
